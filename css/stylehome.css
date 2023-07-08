@@ -1,0 +1,495 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+    margin: 0;
+    flex-direction: column;
+}
+
+header{
+    width: 80vw;
+}
+
+.flexbox-encabezado{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1%;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#item1{
+    flex: 2;
+}
+
+#item2{
+    flex: 2;
+}
+
+
+#item3{
+    flex: 2;
+}
+
+.ico-encabezado{
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.text-item{
+    text-align: center;
+}
+
+/* Logo encabezado */
+
+.logobox-home{
+    background-color: black;
+}
+    
+.logo-home{
+    /* width: 75vw; */
+    /* max-width: 1000px;
+    min-width: 320px; */
+    margin: auto;
+    padding: 10px 50px;
+         
+}
+
+/* Botones Navegacion */
+
+.nav-link{
+    display: inline-block;
+    background: rebeccapurple;
+    color: white;
+    padding: 10px 30px; 
+    text-decoration: none;
+    margin: 5px 0;
+    border: 2px solid white;
+}
+
+.nav-link:hover{
+    background: red;
+}
+
+.navegacion{
+    display: flex;
+    background: black;
+    padding: 10px;
+    justify-content: space-around;
+    padding: 10px 50px;
+}
+
+.menu-nav{
+    background: rebeccapurple;
+    color: white;
+    padding: 10px 0;
+    border: 2px solid white;
+    display: none;
+
+}
+
+/* Slide de imagenes */
+
+.box-slide{
+    position: relative;
+    /* width: 1200px; */
+    /* height: 400px; */
+    background-color: black;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 80vw;
+    height: 30vw;
+                 
+}
+
+.slide{
+    width: 800%;
+    height: 100%;
+    display: flex;
+    /* transform: translateX(-12.5%); */
+}
+
+.slide-section{
+    width: calc(100% / 8);
+    height: 100%;
+}
+
+.slide-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.btn-left,
+.btn-right{
+    display: flex;
+    position: absolute;
+    top:  50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff81;
+    transform: translate(0,-50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover{
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.btn-left{
+left: 10px;
+}
+
+.btn-right{
+    right: 10px;
+}
+
+
+/* Div marcas */
+
+
+.l-marcas{
+    display: flex;
+    padding: 1%;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: black;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    width: 78vw;
+}
+
+.v-marcas{
+    display: flex;
+    padding: 1%;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: black;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    width: 78vw;
+    gap: 20px;
+    
+}
+
+
+.logos-marcas{
+    border: solid red;
+    background-color: white;
+    align-content: space-between;
+    width: 100px;
+    height: 100px;
+    padding: 1%;
+    
+}
+
+.videos-marcas{
+    border: solid red;
+    align-content: space-between;
+    /* width: 500px;
+    height: 300px; */
+    padding: 1%;
+    gap: 20px;
+    /* flex-grow: 2;
+    flex-shrink: 2; */
+    
+}
+
+.logo-marca{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Pie de pagina */
+
+.flexbox-inferior{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    width: 80vw;
+    
+}
+
+.inferior-titulo{
+    display: flex;
+    /* border: solid red; */
+    text-align: center;
+    justify-content: center;
+    flex-grow: 2;
+    padding: 2%;
+    
+}
+
+.redes-text{
+    display: flex;
+    /* border: solid red; */
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.redes-ico{
+    display: flex;
+    
+    align-self: flex-start;
+    width: 40px;
+    height: 40px;
+}
+
+.boletin-text{
+    display: flex;
+    /* border: solid red; */
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+button{
+    background: rebeccapurple;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    border: 2px solid white;
+}
+
+button:hover{
+    background: red;
+}
+
+.ubicacion-text{
+    display: flex;
+    border: solid rebeccapurple;
+    text-align: center;
+    justify-content: center;
+    width: 125px;
+    height: 125px;
+    
+    
+}
+
+/* Pestaña servicio */
+
+.flex-servicio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    width: 78vw;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    padding: 1%;
+    font-size: 16px;
+}
+
+.flex-servicio2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    width: 78vw;
+    padding: 1%;
+    text-align: center;
+    font-size: 14px;
+    /* border: solid red; */
+    
+}
+
+.ico-servi{
+    width: 100px;
+    height: 100px;
+    
+}
+
+.servicios-descr{
+    width: 200px;
+    /* border: solid red; */
+    
+}
+
+.form-con{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    width: 78vw;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    padding: 1%;
+    font-size: 16px;
+}
+
+.form-campo form .campo, textarea{
+    width: 95%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid rebeccapurple;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+#formulario{
+    background: rebeccapurple;
+    color: white;
+    padding: 10px 30px; 
+    text-decoration: none;
+    margin: 5px 0;
+    border: 2px solid white;
+}
+
+#formulario:hover{
+    background: red;
+}
+
+
+/* Menu Navegacion */
+@media (max-width:700px){
+    .navegacion{
+        flex-direction: column;
+    }
+    .menu-nav{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
+}
+
+/* Encabezado */
+@media (max-width:700px){
+    .flexbox-encabezado{
+        flex-direction: column;
+        font-size: 12px;     
+    }
+}
+
+/* Div marcas */
+
+@media (max-width:590px){
+    .logos-marcas{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width:320px){
+    .l-marcas{
+        display: none;
+    }
+    .logo-marca{
+        display: none;
+    }
+    .logos-marcas{
+        display: none;
+    }
+    .videos-marcas{
+        width: 70vw;
+        height: 45vw;
+    }
+
+}
+
+/* Pie de pagina */
+@media (max-width:700px){
+    .flexbox-inferior{
+        font-size: 12px;     
+    }
+}
+
+@media (max-width:320px){
+    .boletin-text{
+        font-size: 8px;
+    }
+}
+
+/* Servicios*/
+@media (max-width:700px){
+    .servicios-descr{
+        font-size: 12px;
+    }
+    .flex-servicio{
+        font-size: 14px;
+    }
+    .ico-servi{
+        width: 75px;
+        height: 75px;
+    }
+
+}
+
+@media (max-width:320px){
+    .servicios-descr{
+        font-size: 8px;
+    }
+    .flex-servicio{
+        font-size: 10px;
+    }
+    .ico-servi{
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+/* Contacto */
+
+@media (max-width:320px){
+    .form-campo{
+        font-size: 8px;
+    }
+    
+}
+
+@media (max-width:700px){
+    .form-campo{
+        font-size: 12px;
+    }
+    #formulario{
+        padding: 5px 15px; 
+    }
+
+}
+
+
+
+
+
+
+
+
+
